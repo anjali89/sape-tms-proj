@@ -70,7 +70,7 @@ public class SignInServlet extends HttpServlet {
 					}
 					//Request is still pending
 					else if(tempRequest.isPending()) {
-						request.setAttribute("status", "Your request is still pending");
+						request.setAttribute("status", "Your request is pending");
 						request.getRequestDispatcher("./HomeView.jsp").forward(request, response);
 					}
 					//Request has been accepted
